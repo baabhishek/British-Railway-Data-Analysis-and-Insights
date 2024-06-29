@@ -1,5 +1,5 @@
 
--- Railway Project Analysis
+-- Railway Project Analysis:
 
 -- After Data cleaning will focuses on the data analysis of UK Railway Ticketing Dataset.
 
@@ -22,7 +22,7 @@ select * from Railway_Project
 -- 1. To identify Peak time analysis 1st I need to understand the Peak purchase hour
 
 select datepart(hour, Time_of_Purchase) as 'Time (in 24 Hr)', 
-       count(*) as 'Count of Ticket'
+       count(*) as 'count of Ticket'
 from railway_project
 group by datepart(hour, Time_of_Purchase)
 order by 'Count of Ticket' desc
